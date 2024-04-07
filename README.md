@@ -19,7 +19,7 @@ To run this project locally, make sure you have Java and Maven installed on your
 
 2. Navigate to the project directory:
 
-```RatingJava```
+```cd RatingsJava```
 
 3. Build the project using Maven:
 
