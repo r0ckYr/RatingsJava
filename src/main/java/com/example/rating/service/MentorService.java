@@ -57,10 +57,10 @@ public class MentorService {
         for(Mentor mentor:mentors)
         {
             Long mentorId = mentor.getId();
-            List<Review> reviews = reviewService.getReviewByMentorId(mentorId);
+            List<Review> mentorReviews = reviewService.getReviewByMentorId(mentorId);
             MentorReviewResponse mentorReviewResponse = MentorReviewResponse.builder()
                     .mentor(mentor)
-                    .review(reviews)
+                    .reviews(mentorReviews)
                     .build();
             mentorReviewResponses.add(mentorReviewResponse);
         }
@@ -75,10 +75,10 @@ public class MentorService {
         for(Mentor mentor:mentors)
         {
             Long mentorId = mentor.getId();
-            List<Review> reviews = reviewService.getReviewByMentorId(mentorId);
+            List<Review> mentorReviews = reviewService.getReviewByMentorId(mentorId);
             MentorReviewResponse mentorReviewResponse = MentorReviewResponse.builder()
                     .mentor(mentor)
-                    .review(reviews)
+                    .reviews(mentorReviews)
                     .build();
             mentorReviewResponses.add(mentorReviewResponse);
         }
